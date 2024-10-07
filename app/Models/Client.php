@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Client extends Model
 {
     use HasFactory;
-    protected $guarded = [];
 
+    protected $fillable =  [
+        'name',
+        'logo',
+    ];
 }
